@@ -2,3 +2,4 @@ todo
 .env
 .vscode
 /uploads
+/node_modules
