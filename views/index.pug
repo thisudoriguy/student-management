@@ -1,0 +1,27 @@
+extends layout
+
+block content
+
+    nav.navbar.is-fixed-top(role="navigation" aria-label="main-navigation")
+        .navbar-brand
+            a(href="/")
+                img(src="", alt="", srcset="")
+                span HeadMastr
+            button.button.navbar-burger(data-target="navMenu")
+                span
+                span
+                span
+        #navMenu.navbar-menu
+            .navbar-start
+                a(href="/support") Help
+                a(href="/payments") Payments
+                a(href="/signup") Signup
+                a(href="/login") Login
+    section.hero
+        .hero-body
+            .container
+                p.title School Management made easy
+                p.subtitle HeadMaster makes running a school less stress and allows you focus fully on the development of your students
+                .button-create-account
+                    a(href="/signup")
+                        button() Register

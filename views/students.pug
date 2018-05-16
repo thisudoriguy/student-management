@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    div(style='margin-left:20px;margin-top:20px')
+        h1.title= title
+
+        ul
+        each student in students
+            li
+                h3 #{student.firstname}  #{student.lastname}
+                p #[strong Class:] #{student.class}
+                p #[strong Parent:] #{student.parents_name}
+                p #[strong Home Address:] #{student.address}
+                p #[strong Phone Number:] #{student.phone_number}
+                img(src="/uploads/8f21be8570b5854770db9b3926031fb6")
+    nav.pagination.is-rounded(role="navigation" aria-label="pagination")
+        a.pagination-previous(title="this is first page" disabled) Previous     
+        a.pagination-next(href="/") Next Page
+        ul
+            li
+                a.pagination-link.is-current(aria-label="Page 1" aria-current="page") 1
+            li
+                a.pagination-link(aria-label="Goto page 2") 2
+            li
+                a.pagination-link(aria-label="Goto page 3") 3
+                            

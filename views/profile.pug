@@ -1,0 +1,28 @@
+extends layout
+
+block content
+	p you have signed up
+	a(href="/logout")
+			button.__signup() Logout
+
+	p=user._id
+	br
+	p=user.local.email
+		
+	a(href="/addstudent")
+			button.__signup() New Student
+
+	a(href="/students")
+			button.__signup() Find Student
+
+	a(href="/payments")
+			button.__signup() Pay Fees
+	
+	a(href="/test-records")
+			button.__signup() Test Records
+
+	a(href="/fee-records")
+			button.__signup() Fee Records
+	
+	a(href="/fee-records")
+			button.__signup() Class

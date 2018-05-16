@@ -1,0 +1,112 @@
+/**{
+    margin:0;
+    padding:0;
+}
+body{
+    background: #031a31;
+    line-height: 1.5em;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    background-color: #031a31;
+    height: 30px;
+    color: #fefefe;
+    position: fixed;
+    top: 0;
+    padding: 10px 30px;
+}
+ul{
+    list-style: none;
+}
+
+#brand{
+    display: inline-block;
+    color: #FFF;
+    text-decoration: none;
+    width: 19%;
+}
+
+#brand img{
+    width: 50px;
+    border-radius: 3px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+#brand span   {
+    display: inline-block;
+  }
+
+  .nav{
+    width: 80%;
+    display: inline-block;
+    text-align: right;
+  }
+
+  .nav ul   {
+    list-style: none;
+    margin: 0;
+    margin-right: 30px;
+  }
+  .nav ul li {
+    display: inline-block;
+  }
+  .nav ul li a    {
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    padding: 10px 25px;
+    border-radius: 3px;
+    transition: 0.3s ease all;
+    
+  }
+  .nav ul li a:hover {
+    background: rgb(4, 214, 57);
+  }
+
+#top{
+    margin-top: 70px;
+    background-color: #031a31;
+    width: 100%;
+    height: 89.2vh;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+
+.product-explanation{
+    width: 60%;
+    color: white;
+    padding-top: 150px; 
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+
+.product-explanation h2{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.product-explanation p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    
+}
+
+button{
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 2px;
+    transition: 0.3s ease all;
+    background: rgb(4, 214, 57);
+}
+*/

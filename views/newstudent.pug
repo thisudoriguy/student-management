@@ -1,0 +1,69 @@
+extends layout
+
+block content
+    .section
+        .container
+        h1.title
+            span Add New Student
+        form(action="/addstudent", method="post" enctype="multipart/form-data")
+            input(type="file", name="avatar")
+            br
+            label.label(for="firstname") First Name
+            input.input(type="text", name="firstname")
+            label.label(for="lastname") Last Name
+            input.input(type="text", name="lastname")
+            label.label(for="class") Class
+            input.input(type="text", name="class")
+            br
+            label.label(for="stateoforigin") State of Origin
+            .select
+                select(name="state_of_origin")
+                    option(value="--select--")--select--
+                    option(value="Abia") Abia
+                    option(value="Adamawa") Adamawa
+                    option(value="Akwa-Ibom") Akwa-Ibom
+                    option(value="Anambra") Anambra
+                    option(value="Bauchi") Bauchi
+                    option(value="Bayelsa") Bayelsa
+                    option(value="Benue") Benue
+                    option(value="Borno") Borno
+                    option(value="Cross-River") Cross-River
+                    option(value="Delta") Delta
+                    option(value="Ebonyi") Ebonyi
+                    option(value="Edo") Edo
+                    option(value="Ekiti") Ekiti
+                    option(value="Enugu") Enugu
+                    option(value="Gombe") Gombe
+                    option(value="Imo") Imo
+                    option(value="Jigawa") Jigawa
+                    option(value="Kaduna") Kaduna
+                    option(value="Kano") Kano
+                    option(value="Katsina") Katsina
+                    option(value="Kebbi") Kebbi
+                    option(value="Kogi") Kogi
+                    option(value="Kwara") Kwara
+                    option(value="Lagos") Lagos
+                    option(value="Nasarawa") Nasarawa
+                    option(value="Niger") Niger
+                    option(value="Ogun") Ogun
+                    option(value="Ondo") Ondo
+                    option(value="Osun") Osun
+                    option(value="Oyo") Oyo
+                    option(value="Plateau") Plateau
+                    option(value="Rivers") Rivers
+                    option(value="Sokoto") Sokoto
+                    option(value="Taraba") Taraba
+                    option(value="Yobe") Yobe
+                    option(value="Zamfara") Zamfara
+                    option(value="FCT") FCT
+            br
+            label.label(for="parent") Parent's Fullname
+            input.input(type="text", name="parents_name")
+            label.label(for="address") Home Address
+            input.input(type="text", name="address")
+            label.label(for="telephone") Phone Number
+            input.input(type="tel", name="phone_number")
+            br
+            button.button.is-link(type="submit") Save Student
+block footer
+     

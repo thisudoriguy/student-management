@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    h3 #{student.firstname}  #{student.lastname}
+
+    img(src=`${student.photo}`)
+    p #[strong Class:] #{student.class}
+    p #[strong Parent:] #{student.parents_name}
+    p #[strong Home Address:] #{student.address}
+    p #[strong Phone Number:] #{student.phone_number}
+    p #[strong State of Origin:] #{student.state_of_origin}     

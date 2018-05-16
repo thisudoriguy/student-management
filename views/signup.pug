@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    h1.title
+        span Signup
+
+    form(action="/signup", method="post")
+        label.label(for="email") Email
+        input.input(type="email", name="email" required)
+
+        label.label(for="password") Password
+        input.input(type="password", name="password" required)
+
+        button.button.is-link(type="submit") Signup
+
+        p Already have an account
+            a(href="/login") Login

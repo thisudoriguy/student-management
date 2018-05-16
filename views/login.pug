@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    h1.title
+        span Login
+    form(action="/login", method="post")
+        .imagecontainer
+            img.avatar(src="img_avatar", alt="avatar")
+        .input_container
+            label.label(for="Email") Email
+            input.input(type="email", name="email" placeholder="Enter username" required)
+
+            label.label(for="username") Password
+            input.input(type="password", name="password" placeholder="Enter password" required)
+
+            button.button.is-link(type="submit") Login 
+            label.checkbox(for="checkbox") Remember Me
+            input(type="checkbox" checked="checked")
+        .input_container
+            a(href="#")
+                span.psw Forgot Password 
+            p Need an account 
+                a(href="/signup") Signup
+                
+            

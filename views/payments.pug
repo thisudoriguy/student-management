@@ -1,0 +1,31 @@
+extends layout
+
+block content
+    H2.title
+        span Time to Pay!
+
+    form(action="/payments", method="post")
+        label.label(for="student name") Student Name
+        input.input(type="text", name="studentname")
+        br
+        label.label(for="amount") Amount
+        input.input(type="text", name="studentname")
+        label.label(for="payment for") Payment For
+        select.select(name="paymentfor")
+            option(value="--select--") --select--
+            option(value="School Fees") School Fees
+            option(value="Books") Books
+            option(value="Uniform") Uniform
+            option(value="Sport Ware") Sport Ware
+            option(value="Graduation") Graduation
+            option(value="Others") Others
+        br
+        span.span#specify
+        label.label(for="cash") Cash
+        input.checkbox(type="checkbox", name="cash")
+        br
+        label.label(for="e-payment") e-payment
+        input.ckeckbox(type="checkbox", name="epayment")
+        br
+        button.button.is-link(type="submit") Pay
+
